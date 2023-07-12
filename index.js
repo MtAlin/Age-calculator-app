@@ -7,7 +7,7 @@ const input_year = document.querySelector("input[name=year ]");
 let newDate;
 
 function calculateAge() {
-  let date_1 = new Date(newDate.year, newDate.month, newDate.day);
+  let date_1 = new Date(newDate.year, newDate.month -1, newDate.day);
   let date_2 = new Date();
   let timeDiff = Math.abs(date_2 - date_1);
   let milsecPerDy = 24 * 60 * 60 * 1000;
